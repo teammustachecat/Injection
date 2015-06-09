@@ -1,0 +1,3 @@
+/Users/cmaher/projects/mustache-cat/Core/Injection/Injection/obj/Release/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/cmaher/projects/mustache-cat/Core/Injection/Injection/bin/Release/Injection.dll
+/Users/cmaher/projects/mustache-cat/Core/Injection/Injection/obj/Release/Injection.dll
