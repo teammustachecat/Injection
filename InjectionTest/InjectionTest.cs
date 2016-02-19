@@ -1,26 +1,33 @@
-using System;
 using NUnit.Framework;
 using MustacheCat.Core.Injection;
 
 namespace InjectionTest {
 
   public class TestClass {}
-  public class TestCreateClass {}
 
   [TestFixture()]
   public class TestInjector {
+    private Injector injector;
+
+    [SetUp()]
+    public void BeforeEach () {
+      injector = new Injector();
+    }
+
     [Test()]
-    public void TestRegisterInject () {
-      var injector = new Injector();
+    public void TestRegisterInjectByType () {
       var original = new TestClass();
       injector.Register<TestClass>(original);
       var injected = injector.Inject<TestClass>();
       Assert.AreSame(original, injected);
+    }
 
-      var t1 = injector.InjectOrCreate<TestCreateClass>();
-      Assert.IsNotNull(t1);
-      var t2 = injector.InjectOrCreate<TestCreateClass>();
-      Assert.AreSame(t1, t2);
+    [Test()]
+    public void TestRegisterInjectByString () {
+      var original = new TestClass();
+      injector.Register("testClassService", original);
+      var injected = injector.Inject<TestClass>("testClassService");
+      Assert.AreSame(original, injected);
     }
   }
 }
