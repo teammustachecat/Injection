@@ -34,8 +34,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Injector.cs" />
-    <Compile Include="IInjector.cs" />
+    <Compile Include="src\IInjector.cs" />
+    <Compile Include="src\Injector.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="src\" />
+  </ItemGroup>
 </Project>

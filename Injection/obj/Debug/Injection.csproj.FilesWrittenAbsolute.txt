@@ -1,5 +1,0 @@
-/Users/cmaher/projects/mustache-cat/Core/Injection/Injection/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
-/Users/cmaher/projects/mustache-cat/Core/Injection/Injection/bin/Debug/Injection.dll.mdb
-/Users/cmaher/projects/mustache-cat/Core/Injection/Injection/bin/Debug/Injection.dll
-/Users/cmaher/projects/mustache-cat/Core/Injection/Injection/obj/Debug/Injection.dll
-/Users/cmaher/projects/mustache-cat/Core/Injection/Injection/obj/Debug/Injection.dll.mdb
